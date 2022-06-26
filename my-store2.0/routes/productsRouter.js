@@ -11,6 +11,10 @@ router.get('/', async(req, res)=>{
     res.json(products)
 })
 
+router.get('/vista', async(req, res)=>{
+    res.redirect('http://127.0.0.1:5500/my-store2.0/routes/vista.html')
+})
+
 router.get('/filter', (req, res)=>{
     res.send("Yo soy un filter")
 })
