@@ -1,0 +1,69 @@
+/* Barra de Menu */
+
+
+/* Imagen en la barra */
+header .contacts_black {
+  background: url(../img/principal.jpg) no-repeat;
+  padding: 0 0px;
+}
+
+/* Imagen banner */
+header .banner-bg_origin {
+  background: url(../img/principal.jpg) no-repeat;
+  padding: 0 0x;
+  background-position: 100% 0%;
+}
+
+/* Imagen del banner extendida */
+@media (min-width: 768px) {
+  header .banner-bg {
+    min-height: 983px;
+  }
+  .container-top_flex {
+    max-width: 785px;
+  }
+}
+
+
+/* Editar barra de menu */
+header .contacts__item {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  line-height: 1.15rem;
+  padding: 15px 0;
+  margin: 15px 0;
+}
+
+/* Color */
+header .contacts__item_white {
+  color:white;
+  font-family: 'PT Sans';
+}
+
+/* Editar el color del vinculo */
+header .contacts__item_white a {
+  text-decoration: none;
+  color:white;
+  font-family: 'PT Sans';
+}
+
+/* Alinear texto a la derecha */
+header .contacts__item_white_l {
+  text-align: right;
+}
+
+
+/* Barra de menu Si borras este codigo desaparece D: */
+@media (min-width: 991px) {
+  header .contacts {
+    display: block;
+  }
+  header div .container-top_contacts {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 1fr;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+}
